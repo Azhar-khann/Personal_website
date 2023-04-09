@@ -1,0 +1,623 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body{
+    font-family: "Poppins";
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #1a1b1f;
+}
+
+nav{
+    background-color: #eeeff1;
+    display:flex;
+    padding-top: 20px;
+    padding-bottom: 7%;
+    justify-content:center;
+    /*border: 1px solid black;*/
+}
+
+nav{
+    width:100%;
+}
+nav ul{
+    width:58%;
+    /*border: 1px solid black;*/
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 0%;
+    padding-left: 16%;
+    opacity: 1;
+    color: #1a1b1f;
+    font-weight: 500;
+    font-size: 17px;
+    
+    
+}
+
+nav a{
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkgray;
+}
+
+
+
+.intro{
+    background-color: #eeeff1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*border: 1px solid red;*/
+    padding-bottom: 7%;
+}
+
+.intro .intro_text{
+    width:40%;
+    /*border:1px solid black;*/
+}
+
+.intro_text .actual_text{
+    text-align: center;
+}
+
+.actual_text strong{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3.5vw;
+    color:rgb(36, 36, 36);
+}
+
+.actual_text p{
+    font-size: 1.8vw;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: rgb(40, 39, 39);
+    line-height: 39px;
+}
+
+.intro .image{
+    width:22%;
+    /*border:1px solid black;*/
+}
+
+.intro img{
+    width:100%;
+    height: auto;
+    background-size: cover;
+    /*border:1px solid red;*/
+}
+
+/* Set up the initial state of the div */
+.intro .intro_text {
+    opacity: 0;
+    transform: translateY(50%);
+}
+  
+  /* Set up the animation properties */
+.intro .intro_text{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+  
+  /* Define the animation keyframes */
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+
+
+.About{
+    background-color: white;
+    margin-top: 100px;
+}
+
+.About p{
+    width:60%;
+    line-height: 35px;
+    word-spacing: 5px;
+    text-align: center;
+    margin:0 auto;
+}
+
+
+
+
+
+.My_path_and_resources{
+    margin-top: 100px;
+    /*border: 1px solid black;*/
+    background-color: rgb(237, 241, 251);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  
+}
+
+.My_path_and_resources .flexbox{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+   /* border: 1px solid black;*/
+    margin-bottom: 80px;
+}
+
+.My_path_and_resources .mit_image,
+.My_path_and_resources .textbook_image{
+    width:14%;
+    /*border:1px solid black;*/
+}
+
+.My_path_and_resources img{
+    width:100%;
+    border-radius: 200px;
+}
+
+.My_path_and_resources h5{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    margin: 5px;
+}
+
+.My_path_and_resources p{
+    width:60%;
+    line-height: 35px;
+    word-spacing: 5px;
+    text-align: center;
+    margin:0 auto;
+    
+
+}
+
+
+
+.courses_mastered{
+    margin-top: 100px;
+
+   
+}
+
+.courses_mastered ul{
+    margin-top: 50px;
+    margin-left:5% ;
+    list-style: disc;
+    display: flex;
+    flex-wrap: wrap;
+    /*border:1px solid black;*/
+}
+
+.courses_mastered li{
+    font-size: 1.5vw;
+    line-height: 2.5;
+    padding-right: 15%;
+    width:35%;
+    font-weight: 400;
+    font-family: 'Lekton';
+ 
+}
+
+
+
+
+.skills {
+    margin-top: 130px;
+    background-color: #3855a8;
+    padding-top: 2px;
+    padding-bottom: 50px;
+}
+
+.skills h1{
+    color:white;
+    font-size: 70px;
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #151515;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #4070f4;
+    /*animation: progress 1s ease-in-out forwards;*/
+    opacity: 0;
+}
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 90%;
+    animation-delay: 0.2s;
+}
+.skill-per.nodejs{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+
+
+
+.projects{
+    padding-top:20px;
+    padding-bottom: 15px;
+    margin-top: 130px;
+    /*background-color: #eeeff1*/
+    background-color: #f9fafa;
+}
+
+.web_projects{
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.web_projects h2{
+    margin-left: 3%;
+    font-weight: 100;
+    font-size: 33px;
+    color:#282829;
+    font-family: "Roboto";
+
+}
+
+.projects .web_flexbox{
+    display: flex;
+    /*border: 1px solid black;*/
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.projects .box{
+    width: 25%; 
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px lightgrey ;
+}
+
+.projects .upper_inner{
+    background-color: #4070f4;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.projects .circle{
+   /* border: 3px solid white;*/
+    border-radius: 50%;
+    width:38%;
+    margin: 20px auto;
+    background-color: #4070f4;
+
+}
+
+.web_projects img{
+    width:100%;
+    border-radius: 50%;
+    display: block;
+    
+}
+
+.projects .lower_inner{
+    /*border:1px solid black;*/
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.projects h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.projects p{
+    width:90%;
+    line-height: 20px;
+    word-spacing: 3px;
+    text-align: center;
+    margin:0 auto;
+    font-size: 13px;
+    color: #2e2e2f;
+}
+
+.projects .button{
+    border:1px solid #4070f4;
+    display:block;
+    padding:3% 5%;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #4070f4;
+    color:white;
+    cursor: pointer;
+    margin: 12% auto;
+}
+
+.projects a{
+    text-decoration: none;
+}
+
+.button:hover{
+    background: #265DF2;
+}
+
+
+footer{
+    margin-top: 50px;
+    /*border: 1px solid black;*/
+
+}
+
+footer #footer_h2{
+    font-size: 28px;
+    font-weight: 350;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+footer #footer_h3{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    nav li{
+        padding-left: 15%;
+    }
+
+    .actual_text strong{
+        font-size: 40px;;
+    }
+    .actual_text p{
+        font-size: 2vw;
+    }
+
+    .intro .intro_text{
+        width:50%;
+    }
+
+    .intro .image{
+        width: 28%;
+    }
+
+    .About p {
+        width:70%;
+    }
+
+
+    .My_path_and_resources .mit_image,
+    .My_path_and_resources .textbook_image{
+        width:19%;
+    }
+
+    .My_path_and_resources p{
+        width:70%;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .courses_mastered li{
+        font-size: 2vw;
+        width: 49%;
+        padding-right: 0%;
+    }
+
+    footer #footer_h2{
+        font-size: 22px;
+    }
+
+    footer #footer_h3{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1250px){
+    .projects .box{
+        width:28%;
+    }
+
+    .projects h3{
+        font-size: 18px;
+    }
+
+    .projects p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:500px){
+    .projects .web_flexbox{
+        flex-wrap: wrap;
+    }
+
+    .projects .box{
+        width:320px;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-bottom: 8%;
+    }
+
+    .web_projects{
+        margin-bottom: 0px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:500px){
+    nav{
+        padding-top: 0px;
+    }
+    nav ul{
+        width:100%
+    }
+    nav li{
+        font-size: 4vw;
+        padding-left: 9%;
+    }
+
+    .intro{
+        flex-wrap: wrap;
+    }
+
+    .intro .intro_text{
+        width:425px;
+    }
+
+    .actual_text strong{
+        font-size: 9.7vw;
+        width:95%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .actual_text p {
+        font-size: 4.5vw;
+        width:88%;
+        margin:0 auto;
+    }
+
+    .intro .image{
+        width:62%;
+        margin-top: 25px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .About p{
+        width:80%;
+    }
+
+    .My_path_and_resources .mit_image, 
+    .My_path_and_resources .textbook_image{
+        width:35.2%;
+    }
+
+    .My_path_and_resources h5{
+        font-size: 12px;
+    }
+
+    .My_path_and_resources p{
+        width:80%;
+    }
+
+    .courses_mastered li{
+        width:425px;
+        line-height: 3;
+        font-size: 4.5vw;
+        padding-right: 0%;
+    }
+
+    .container{
+        width:75%;
+    }
+
+    .web_projects h2{
+        font-size: 23px;
+    }
+
+    .projects .web_flexbox{
+        flex-wrap: wrap;
+    }
+
+    .projects .box{
+        width:290px;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-bottom: 8%;
+    }
+
+    .web_projects{
+        margin-bottom: 0px;
+    }
+
+    footer #footer_h2{
+        font-size: 24px;
+    }
+
+    footer #footer_h3{
+        font-size: 15px;
+    }
+}
