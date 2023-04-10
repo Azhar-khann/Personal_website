@@ -3,7 +3,7 @@
 
 body{
     font-family: "Poppins";
-    margin: 0;
+    margin:0;
 }
 
 h1{
@@ -31,7 +31,6 @@ nav ul{
 
 nav li{
     display: inline-block;
-    padding-right: 0%;
     padding-left: 16%;
     opacity: 1;
     color: #1a1b1f;
@@ -533,7 +532,9 @@ footer #footer_h3{
     }
     nav li{
         font-size: 4vw;
-        padding-left: 9%;
+        padding-left: 8%;
+        width:18%;
+       
     }
 
     .intro{
