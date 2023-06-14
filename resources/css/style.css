@@ -36,8 +36,7 @@ nav li{
     color: #1a1b1f;
     font-weight: 500;
     font-size: 17px;
-    
-    
+    width:7%;
 }
 
 nav a{
@@ -368,7 +367,7 @@ a:hover{
     width:100%;
     border-radius: 50%;
     display: block;
-    
+
 }
 
 .projects .lower_inner{
