@@ -216,7 +216,7 @@ a:hover{
 
 .skills {
     margin-top: 130px;
-    background-color: #3855a8;
+    background-color: #142966;
     padding-top: 2px;
     padding-bottom: 50px;
 }
@@ -226,53 +226,84 @@ a:hover{
     font-size: 70px;
 }
 
+.skills .box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .container{
     max-width: 500px;
     width: 100%;
-    background: #fff;
     margin: 0 auto;
     padding: 10px 20px;
     border-radius: 7px;
 }
+
 .container .skill-box{
     width: 100%;
     margin: 25px 0;
 }
+
 .skill-box .title{
     display: block;
     font-size: 16px;
     font-weight: 400;
-    color: #151515;
+    color:#ffffff
 }
 .skill-box .skill-bar{
     height: 8px;
-    width: 100%;
     border-radius: 6px;
     margin-top: 6px;
     background: rgba(0,0,0,0.1);
+    background-color: black;
 }
 .skill-bar .skill-per{
     position: relative;
     display: block;
     height: 100%;
-    width: 90%;
     border-radius: 6px;
-    background: #4070f4;
-    /*animation: progress 1s ease-in-out forwards;*/
+    background: #ffffff;
+    /* animation: progress 1s ease-in-out forwards; */
     opacity: 0;
 }
-.skill-per.css{
-    width: 70%;
-    animation-delay: 0.1s;
-}
-.skill-per.javascript{
+
+.python{
     width: 90%;
     animation-delay: 0.2s;
 }
+
+.javascript,
+.node,
+.express{
+    width: 85%;
+    animation-delay: 0.2s;
+}
+
+.html{
+    width: 100%;
+    animation-delay: 0.1s;
+}
+
+.css,
+.postgres{
+    width: 75%;
+    animation-delay: 0.1s;
+}
+
+.react{
+    width: 80%;
+    animation-delay: 0.2s;
+}
+
+
+
 .skill-per.nodejs{
     width: 60%;
     animation-delay: 0.3s;
 }
+
+
 @keyframes progress {
     0%{
         width: 0;
