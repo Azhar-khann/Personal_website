@@ -10,6 +10,7 @@ h1{
     text-align: center;
     font-size: 60px;
     color: #1a1b1f;
+    width:99%;
 }
 
 nav{
@@ -444,9 +445,32 @@ a:hover{
 }
 
 
+
+.computer {
+    text-align: center; /* Center-align the content within the div */
+}
+
+.computer img{
+    width: 45%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.computer p {
+    margin: 4% auto;
+    width: 70%;
+    line-height: 2;
+    font-family: 'Lekton';
+    font-size: 17px;
+}
+
+
+
 footer{
     margin-top: 50px;
     /*border: 1px solid black;*/
+    margin-bottom: 2%;
+    text-align: center;
 
 }
 
@@ -461,10 +485,19 @@ footer #footer_h3{
     font-size: 17px;
     font-weight: 300;
     text-align: center;
+    display: inline-block;
+    margin-left: 0.5%;
 }
 
+footer .contact_detail{
+    padding: 1%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 90px;
 
-@media only screen and (min-width:768px) and (max-width:1200px) {
+}
+
+@media only screen and (min-width:561px) and (max-width:1200px) {
 
     nav li{
         padding-left: 15%;
@@ -517,6 +550,10 @@ footer #footer_h3{
         font-size: 15px;
     }
 
+    .computer img{
+        width: 50%;
+    }
+
 }
 
 @media only screen and (min-width:1024px) and (max-width:1250px){
@@ -553,7 +590,7 @@ footer #footer_h3{
 
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:560px){
     nav{
         padding-top: 0px;
     }
@@ -650,5 +687,9 @@ footer #footer_h3{
 
     footer #footer_h3{
         font-size: 15px;
+    }
+
+    .computer img{
+        width: 85%;
     }
 }
